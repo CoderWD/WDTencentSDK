@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "WDTencentSDK"
-s.version          = "1.0.0"
+s.version          = "1.0.1"
 s.summary          = "Tencent sdk 3.2.3"
 s.description      = <<-DESC
 It is a Tencent SDK use on ios by Objective-c.
@@ -18,6 +18,7 @@ s.requires_arc = true
 s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
 s.ios.vendored_frameworks = 'TencentOpenAPI.framework'
+s.ios.resource = 'TencentOpenApi_IOS_Bundle.bundle'
 
 s.frameworks = 'Foundation', 'UIKit','Security','SystemConfiguration','CoreGraphics','CoreTelephony'
 
